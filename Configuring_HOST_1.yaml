@@ -1,4 +1,7 @@
 ---
+
+# This is a beautiful Script
+
 - name: Get stats and write to desktop
   hosts: linuxhost
   tasks:
@@ -6,4 +9,5 @@
       shell: uname -a > /home/nsindiso/Desktop/output.txt
     - name: print my username 
       shell: whoami >> /home/nsindiso/Desktop/output.txt
-      
+
+
