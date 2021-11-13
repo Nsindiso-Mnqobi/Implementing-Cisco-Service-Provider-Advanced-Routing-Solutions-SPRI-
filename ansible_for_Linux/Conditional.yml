@@ -1,0 +1,7 @@
+---
+- hosts: linuxhost
+  become: true
+  tasks:
+      - name: install nginx on Centos
+        yum: name=nginx state=latest
+        when: ansible_os_family == "RedHat"

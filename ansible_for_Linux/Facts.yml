@@ -11,3 +11,4 @@
     - name: print dirs variable from last step to console
       debug: 
         msg: "{{dirs}}"
+        
