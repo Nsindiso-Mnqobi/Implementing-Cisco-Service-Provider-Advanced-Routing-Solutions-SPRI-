@@ -1,0 +1,8 @@
+interface: 
+  -    { name: GigabitEthernet1, ip_address:  150.1.1.2/30,  description: Connection to ISP, remote_ip: 150.1.1.1 }
+  -    { name: GigabitEthernet2,  ip_address:  150.1.1.6/30, description: Connection to ISP2, remote_ip: 150.1.1.5 }
+  -    { name: GigabitEthernet3, ip_address:  200.1.1.1/30, description: Local Area Network, remote_ip: 200.1.1.2 }
+
+
+
+

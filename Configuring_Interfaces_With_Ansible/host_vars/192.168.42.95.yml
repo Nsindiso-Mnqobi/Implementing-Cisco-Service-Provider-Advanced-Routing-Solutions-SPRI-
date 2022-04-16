@@ -1,0 +1,2 @@
+interface:
+-    { name: GigabitEthernet1,  ip_address: 150.1.1.1/30,  description: Connection to R1, remote_ip: 150.1.1.2 }

@@ -1,0 +1,8 @@
+  - name : Configuring Intefaces For BGP CONFIGURATION 
+    hosts:   BGP_CONFIGURATION
+    gather_facts: no
+    
+    tasks:
+      - name: save running to startup when modified
+        ios_config:
+          save_when: always
