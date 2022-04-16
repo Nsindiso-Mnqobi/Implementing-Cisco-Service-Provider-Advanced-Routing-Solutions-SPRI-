@@ -1,9 +1,9 @@
-  - name : Configuring Intefaces For BGP CONFIGURATION 
+  - name : Configuring Intefaces For BGP Configuration  
     hosts:   BGP_CONFIGURATION
     gather_facts: no
     
     tasks:
-      - name: Configuring ip address on interface
+      - name: Configuring Ip Address On Interface
         cisco.ios.ios_l3_interfaces:
           config:
           - name: "{{item.name}}"
@@ -21,7 +21,7 @@
           state: merged
         with_items: "{{ interface }}"
 
-      - name: Verify device configuration 
+      - name: Verify Device Configuration 
         ios_command:
           commands:
           - show ip interface brief
@@ -30,12 +30,12 @@
       - name: Verify_configuration 
         debug: var=my_output.stdout_lines
 
-      - name: Test reachability to 10.10.10.10 using default vrf
+      - name: Test Reachability 
         cisco.ios.ios_ping:
           dest: "{{item.remote_ip}}"
           count: 4
         with_items: "{{ interface }}"
         register: ping_results
 
-      - name: Verify_ping_results 
+      - name: Verify_Ping_Results 
         debug: var=ping_results
