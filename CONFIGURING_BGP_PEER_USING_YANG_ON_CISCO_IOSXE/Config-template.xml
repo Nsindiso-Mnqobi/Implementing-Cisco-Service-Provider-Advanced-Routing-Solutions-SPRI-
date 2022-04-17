@@ -1,0 +1,22 @@
+<config
+	xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+	<native
+		xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-native">
+		<router>
+			<bgp
+				xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-bgp">
+				<id>{asn}</id>
+				<bgp>
+					<router-id>
+						<ip-id>{id}</ip-id>
+					</router-id>
+				</bgp>
+				<neighbor>
+					<id>{remote_ip}</id>
+					<remote-as>{remote_asn}</remote-as>
+					<description>{description}</description>
+				</neighbor>
+			</bgp>
+		</router>
+	</native>
+</config>
