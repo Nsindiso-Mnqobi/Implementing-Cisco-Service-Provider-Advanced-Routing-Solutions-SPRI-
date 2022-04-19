@@ -1,4 +1,5 @@
 from ncclient import manager
+from ncclient import xml_
 from credentials import credentials
 import csv
 import xmltodict
@@ -29,7 +30,7 @@ class save_config:
             save_reply = xmltodict.parse(save_rpc.xml)
             reply = self.host + " : " + \
                 save_reply["rpc-reply"]["result"]["#text"]
-            return reply
+            print(reply)
 
 if __name__ == "__main__":
 

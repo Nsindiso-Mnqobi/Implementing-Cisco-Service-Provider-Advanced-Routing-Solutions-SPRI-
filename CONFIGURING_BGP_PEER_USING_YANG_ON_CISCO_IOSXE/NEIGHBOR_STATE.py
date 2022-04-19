@@ -34,8 +34,7 @@ class verify_neighbor:
                      print(item["neighbor-id"]+"*"*20+item["description"]+"*"*20+item["session-state"])
                  except:
                      print(state_parse["neighbor-id"]+"*"*20+state_parse["description"]+"*"*20+state_parse["session-state"])
-            
-            print("")
+                     break
                      
 if __name__ == "__main__":
 
